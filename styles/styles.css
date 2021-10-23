@@ -1,0 +1,56 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #262626;
+  font-family: "Quicksand", sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+}
+
+dl {
+  color: #fafafa;
+}
+
+dt {
+  line-height: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fafafa;
+  margin: 5% auto;
+}
+
+a {
+  color: #262626;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2b3b45;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #262626;
+}
+/*# sourceMappingURL=styles.css.map */

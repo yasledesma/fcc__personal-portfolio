@@ -1,0 +1,78 @@
+// Variables //
+// Color palette and fonts //
+$primary-color: hsl(0, 0%, 98%);
+$secondary-color: hsl(37, 72%, 78%); 
+$tertiary-color: hsl(31, 50%, 66%); 
+
+$text-color: hsl(0, 0%, 15%);
+
+$primary-font: 'Quicksand', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+$link--color: hsl(0, 0%, 15%);
+$link--hover: hsl(204, 23, 22%);
+$link--visited: hsl(0, 0%, 15%); 
+
+// Reusable code //
+@mixin flexContainer($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// Base //
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+	font-family: $primary-font;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+}
+
+dl {
+    color: $primary-color;
+}
+
+dt {
+    line-height: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-family: $secondary-font;
+    color: $primary-color;
+    margin: 5% auto;
+}
+
+a {
+    color: $link--color;
+    font-weight: lighter;
+    text-decoration: none;
+
+    &:hover {
+        color: $link--hover;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $link--visited;
+    }
+}
