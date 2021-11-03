@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin Ledesma - Portfolio</title>
+    <title>Yasmin Ledesma | Web Developer</title>
+
+    <script src="https://kit.fontawesome.com/97b9ec8a9a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../fcc__personal-portfolio/styles/styles.css">
-</head>
-<body>
-    <nav id="navbar">
-        <dl>
-          <dt><a href="#welcome-section">About me</a></dt>
-          <dt><a href="#projects">Projects</a></dt>
-        </dl>
-        <dt><a href="#profile-link">GitHub</a></dt>
+  </head>
+  <body>
+    <div class="header">
+      <nav id="navbar" class="header__navbar">
+        <input type="checkbox" name="header__navbar__check" id="header__navbar__check" class="header__navbar__check">
+        <label for="header__navbar__check" class="header__navbar__toggle">
+          <svg class="svg menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          </svg>
+          <svg class="svg close" viewBox="0 0 384 512" width="100" title="times">
+            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          </svg>
+        </label>
+        <dl class="header__navbar__nav">
+          <dt class="header__navbar__nav__title">Yasmin Ledesma</dt>
+          <dt class="header__navbar__nav__bullet"><a href="#welcome-section">About me</a></dt>
+          <dt class="header__navbar__nav__bullet"><a href="#projects">Projects</a></dt>
+          <dt class="header__navbar__nav__bullet"><a href="#contributions">Contributions</a></dt>
+          <dt class="header__navbar__nav__bullet"><a href="#profile-link">Contact</a></dt>
         </dl>
       </nav>
-      
-      <section id="welcome-section">
-        <h1>Welcome!</h1>
+    </div>
+    
+    <main class="hero">
+      <section id="welcome-section" class="hero__container">
+        <h1 class="hero__container__heading">Hi, I'm Yasmin!</h1>
+        <h2 class="hero__container__subheading">Front-End </br> Web Developer</h2>
+        <ul class="hero__container__list">
+          <li class="hero__container__list__bullet">HTML</li>
+          <li class="hero__container__list__bullet">CSS</li>
+          <li class="hero__container__list__bullet">JavaScript</li>
+          <li class="hero__container__list__bullet">React</li>
+        </ul>
       </section>
-      
-      <section id="projects">
-        <div class="project-tile">
-          <a href="#">My first project!</a>
-        </div>
-      </section>
-      
-      <footer>
-        <a id="profile-link" href="#" target="_blank">My GitHub</a>
-      </footer>
-</body>
+    </main>
+        
+    <section id="projects" class="projects">
+      <h2 class="projects__title">Projects</h2>
+      <div class="project-tile projects__card card-1">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">My project</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+
+      <div class="project-tile projects__card card-2">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">My project</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+
+      <div class="project-tile projects__card card-3">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">My project</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+    </section>
+
+    <section id="contributions" class="projects">
+      <h2 class="projects__title">Contributions</h2>
+      <div class="project-tile projects__card card-4">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">Contribution title</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+
+      <div class="project-tile projects__card card-5">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">Contribution title</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+
+      <div class="project-tile projects__card card-6">
+        <img src="../fcc__personal-portfolio/sources/thumbnail.png" alt="Name of my project about x." class="projects__card__img">
+        <h2 class="projects__card__title">Contribution title</h2>
+        <p class="projects__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus quos maiores atque! Maiores rem reiciendis recusandae porro dolor odio ut praesentium aperiam similique deserunt? Eaque laborum labore cum voluptas unde ea possimus dolorum sit. Optio, doloribus ex vero natus at, suscipit incidunt obcaecati, autem nesciunt saepe odit nostrum consectetur.</p>
+      </div>
+    </section>
+        
+    <footer class="footer" id="profile-link">
+      <div class="footer__about">
+        <h3 class="footer__about__title">About me...</h3>
+        <p class="footer__about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Facere commodi vitae autem at voluptate! Odio at non vel quam minima.</p>
+      </div>
+
+      <div class="footer__contact">
+        <h3 class="footer__contact__title">You can find me at...</h3>
+        <ul class="footer__contact__list">
+          <li><a href="https://github.com/HiddenOgre28" target="_blank" alt="GitHub"><i class="fab fa-github footer__contact__list__bullet"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/yasmin-ledesma/" target="_blank" alt="LinkedIn"><i class="fab fa-linkedin-in footer__contact__list__bullet"></i></a></li>
+          <li><a href="https://www.freecodecamp.org/fcc17a60c39-8bdf-4e04-8ed0-c951134c4244" target="_blank" alt="freeCodeCamp"><i class="fab fa-free-code-camp footer__contact__list__bullet"></i></a></li>
+          <li><a href="mailto:yaslesd@gmail.com?subject=Let's%20talk!" target="_blank" alt="My email adress"><i class="fas fa-envelope footer__contact__list__bullet"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__credits">
+        <p class="footer__credits__p">Designed and coded by <a href="#">Yasmin Ledesma</a> © 2021. Hero by <a href="https://www.freepik.com/bluelela">Bluelela</a>.</p>
+      </div>
+    </footer>
+  </body>
 </html>
